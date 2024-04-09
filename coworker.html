@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coworker Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="navigationmenu.js"></script>
+</head>
+
+<body>
+
+    <header id="header">
+    </header>
+    <h2 id="owner"></h2>
+    <main>
+        <section id="workspace-details">
+            <div>       
+                <div class="form-group">
+                    <p id="searchMessage"></p>
+                    <h1>Coworker Page</h1>
+                    <label for="address">Address:</label>
+                    <input type="text" id="searchAddress" name="address" class="addProperty"><br>
+
+                    <label for="neighborhood">Neighborhood:</label>
+                    <input type="text" id="searchNeighborhood" name="neighborhood" class="addProperty"><br>
+
+                    <label for="squareFeet">Square Feet:</label>
+                    <input type="number" id="searchSquareFeet" name="squareFeet" class="addProperty number"><br>
+
+                    <label for="parking">Parking Garage:</label>
+                    <select id="SearchParking" name="parking" class="addProperty">
+                        <option value="None"></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br>
+
+                    <label for="publicTransport">Public Transportation:</label>
+                    <select id="searchPublicTransport" name="publicTransport" class="addProperty">
+                        <option value="None"></option>
+                        <option value="Reachable">Reachable</option>
+                        <option value="Not Reachable">Not Reachable</option>
+                    </select><br>
+                </div>
+                <div class="form-group">
+                    <label for="seating-capacity">Seating Capacity:</label>
+                    <input type="number" id="searchSeating-capacity" name="seating-capacity" class="addWorkspace number">
+                </div>
+                <div class="form-group">
+                    <label for="smoking-policy">Smoking Policy:</label>
+                    <select id="searchSmoking-policy" name="smoking-policy" class="addWorkspace">
+                        <option value="None"></option>
+                        <option value="Allowed">Allowed</option>
+                        <option value="Not Allowed">Not Allowed</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="availability-date">Availability Date:</label>
+                    <input type="date" id="searchAvailability-date" name="availability-date" class="addWorkspace">
+                </div>
+                <div class="form-group">
+                    <label for="lease-term">Lease Term:</label>
+                    <select id="searchLease-term" name="lease-term" class="addWorkspace">
+                        <option value="None"></option>
+                        <option value="Day">Day</option>
+                        <option value="Week">Week</option>
+                        <option value="Month">Month</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="number" id="searchPrice" name="price" class="addWorkspace number">
+                </div>
+                <button type="button" id="SearchProperty">Search Workspace</button>
+            </div>
+        </section>
+
+
+        <div>
+            <table id="searchWorkspaceTable" border="2" style="border-collapse:collapse">
+                <tbody>
+                    <tr>
+                        <th width="150px">Address</th>
+                        <th width="150px">Neighborhood</th>
+                        <th width="150px">Square Feet</th>
+                        <th width="150px">Parking</th>
+                        <th width="150px">Public Transporation</th>
+                        <th width="150px">Seating Capacity</th>
+                        <th width="150px">Smoking Policy</th>
+                        <th width="150px">Availability Date</th>
+                        <th width="150px">Lease Term</th>
+                        <th width="150px">Price</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer id="footer">
+    </footer>
+    <script src="footer.js"></script>
+    <script src="coworker.js" type="module"></script>
+</body>
+
+</html>
